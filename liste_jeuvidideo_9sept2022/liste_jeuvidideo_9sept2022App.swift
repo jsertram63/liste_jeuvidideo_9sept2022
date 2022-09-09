@@ -12,6 +12,7 @@ struct liste_jeuvidideo_9sept2022App: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(JeuVideoViewModel())
         }
     }
 }

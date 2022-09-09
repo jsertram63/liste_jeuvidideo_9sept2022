@@ -8,64 +8,57 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var jeuVideoVM: JeuVideoViewModel
+    
     var body: some View {
         NavigationView{
-            List(personnages){ perso in
-                PersonnageRow(perso: perso)
+            List(jeuVideoVM.personnages, id: \.id) { perso in
+                NavigationLink {
+                    // DetailView( : )
+                } label: {
+                    HStack {
+                        AsyncImage(url: URL(string: perso.imageName)!) { image in
+                            image
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 50, height: 50)
+                                .clipShape(Circle())
+                                .overlay(Circle().stroke(.black))
+                        } placeholder: {
+                            ProgressView()
+                        }
+                        
+                        VStack(alignment:.leading){
+                            Text(perso.nomPersonnage)
+                                .font(.system(size: 21,
+                                              weight: .medium,
+                                              design: .default))
+                            Text(perso.nomDuJeuAppartenance)
+                                .font(.system(size: 14))
+                        }
+                    }
+                    .padding(.vertical)
+                }
+                .listRowBackground(Color("Color2"))
             }
-            .navigationTitle("Personnage de jeu")
-            .listStyle(.plain)
-        }
-        
-    }
-}
-
-
-struct PersonnageRow: View {
-    let perso: PersonnageModel
-    
-    var body: some View {
-        
-        HStack {
-            AsyncImage(url: URL(string: perso.imageName)!){ image in
-                image
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 60, height: 60)
-                    .clipShape(Circle())
-                    .overlay(Circle().stroke(.black))
-                    
+            .background(Color("Color2").ignoresSafeArea())
+            .navigationTitle("Héros de jeux vidéo")
+            .onAppear {
+                UINavigationBar.appearance().largeTitleTextAttributes = [
+                    .foregroundColor: UIColor.tintColor,
+                    .font : UIFont(name:"Noteworthy", size: 30)!
+                ]
                 
-            }placeholder: {
-                ProgressView()
-            }
-            
-            
-            /*Image(systemName: "gamecontroller.fill")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width: 60, height: 60)
-                .clipShape(Circle())
-                .cornerRadius(50)*/
-            VStack(alignment:.leading){
-                Text(perso.nomPersonnage)
-                    .font(.system(size: 21,
-                                  weight: .medium,
-                                  design: .default))
-                Text(perso.description)
-                Text(perso.nomDuJeuAppartenance)
-                    .font(.system(size: 14))
+                UITableView.appearance().backgroundColor = .clear
             }
         }
-       
-        
         
     }
-    
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(JeuVideoViewModel())
     }
 }
