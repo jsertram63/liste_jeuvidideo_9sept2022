@@ -22,7 +22,7 @@ struct ContentView: View {
 
 
 struct PersonnageRow: View {
-    let perso: Personnage
+    let perso: PersonnageModel
     
     var body: some View {
         
