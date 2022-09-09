@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37668EF828CBC7EB002DE4F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37668EF728CBC7EB002DE4F7 /* LaunchScreen.storyboard */; };
 		897E1F4028CB3C82001BE776 /* liste_jeuvidideo_9sept2022App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897E1F3F28CB3C82001BE776 /* liste_jeuvidideo_9sept2022App.swift */; };
 		897E1F4228CB3C82001BE776 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897E1F4128CB3C82001BE776 /* ContentView.swift */; };
 		897E1F4428CB3C84001BE776 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 897E1F4328CB3C84001BE776 /* Assets.xcassets */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37668EF628CBC7BD002DE4F7 /* liste-jeuvidideo-9sept2022-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "liste-jeuvidideo-9sept2022-Info.plist"; sourceTree = SOURCE_ROOT; };
+		37668EF728CBC7EB002DE4F7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		897E1F3C28CB3C82001BE776 /* liste_jeuvidideo_9sept2022.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = liste_jeuvidideo_9sept2022.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		897E1F3F28CB3C82001BE776 /* liste_jeuvidideo_9sept2022App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = liste_jeuvidideo_9sept2022App.swift; sourceTree = "<group>"; };
 		897E1F4128CB3C82001BE776 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				897E1F4128CB3C82001BE776 /* ContentView.swift */,
+				37668EF728CBC7EB002DE4F7 /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -69,6 +73,7 @@
 		897E1F3E28CB3C82001BE776 /* liste_jeuvidideo_9sept2022 */ = {
 			isa = PBXGroup;
 			children = (
+				37668EF628CBC7BD002DE4F7 /* liste-jeuvidideo-9sept2022-Info.plist */,
 				897E1F3F28CB3C82001BE776 /* liste_jeuvidideo_9sept2022App.swift */,
 				37668EF428CBC5AD002DE4F7 /* Model */,
 				37668EF528CBC5B2002DE4F7 /* View */,
@@ -144,6 +149,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37668EF828CBC7EB002DE4F7 /* LaunchScreen.storyboard in Resources */,
 				897E1F4728CB3C84001BE776 /* Preview Assets.xcassets in Resources */,
 				897E1F4428CB3C84001BE776 /* Assets.xcassets in Resources */,
 			);
@@ -284,12 +290,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"liste_jeuvidideo_9sept2022/Preview Content\"";
 				DEVELOPMENT_TEAM = SV32QZFP9X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "liste-jeuvidideo-9sept2022-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -313,12 +321,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"liste_jeuvidideo_9sept2022/Preview Content\"";
 				DEVELOPMENT_TEAM = SV32QZFP9X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "liste-jeuvidideo-9sept2022-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
