@@ -21,7 +21,7 @@ struct ContentView: View {
                     
                     List(jeuVideoVM.personnages, id: \.id) { perso in
                         NavigationLink {
-                            // DetailView( : )
+                            DetailView(personnage: perso)
                         } label: {
                             HStack(spacing: 15.0) {
                                 AsyncImage(url: URL(string: perso.imageName)!) { image in
@@ -54,6 +54,7 @@ struct ContentView: View {
                         .listRowBackground(Color("Color2"))
                     }
                     .navigationBarTitle("Héros de jeux vidéo")
+                    .navigationBarTitleDisplayMode(.inline)
                     .navigationBarItems(
                         trailing:
                             Image("GameOne")

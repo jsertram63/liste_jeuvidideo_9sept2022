@@ -13,13 +13,13 @@ class JeuVideoViewModel: ObservableObject {
         PersonnageModel(
             nomPersonnage: "Mario",
             nomDuJeuAppartenance: "Mario",
-            description: "Mario est un personnage de jeu vidéo devenu la mascotte de Nintendo",
+            description: "Mario est un personnage de jeu vidéo devenu la mascotte de Nintendo.",
             imageName: "https://cdn-icons-png.flaticon.com/512/528/528107.png"
         ),
         PersonnageModel(
             nomPersonnage: "Batman",
             nomDuJeuAppartenance: "Bruce wayne",
-            description: " un super-héros de fiction appartenant à l'univers de DC Comics",
+            description: " un super-héros de fiction appartenant à l'univers de DC Comics.",
             imageName:"https://cdn-icons-png.flaticon.com/512/805/805385.png"
         ),
         PersonnageModel(
